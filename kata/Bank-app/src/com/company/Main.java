@@ -17,5 +17,10 @@ public class Main {
             System.out.println("hello world" + listOfCustomers.get(i).getCustomer());
         }
 
+
+        for(int i = 0 ; i < listOfCustomers.size() ; i++){
+            System.out.println("hello world" + listOfCustomers.get(i).getCustomer());
+        }
+
     }
 }

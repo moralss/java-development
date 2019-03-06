@@ -21,4 +21,9 @@ public class Customer {
         return customerName;
     }
 
+    public ArrayList<Double> listOfTransactions(){
+        return transactions;
+    }
+
+
 }

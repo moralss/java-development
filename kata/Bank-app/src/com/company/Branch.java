@@ -19,14 +19,23 @@ public class Branch {
     }
 
     public void addTransation(String customerName , double transaction){
-        if(customerName == findName(customerName)){
-
+        Customer existingCustomer = findCustomer(customerName);
+        if(existingCustomer != null) {
+            existingCustomer.addTransaction(transaction);
         }
     }
 
 
-    private findName(){
-        
+    private Customer findCustomer(String customerName){
+        for(int i = 0 ; i < this.customers.size() ; i++){
+            Customer iteratedCustomer =  this.customers.get(i);
+            if(iteratedCustomer.getCustomer().equals(customerName)){
+                return iteratedCustomer;
+            }
+        }
+
+        return null;
+
     }
 
 
