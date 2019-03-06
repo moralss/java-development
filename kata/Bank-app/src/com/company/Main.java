@@ -1,14 +1,21 @@
 package com.company;
 
+import java.util.ArrayList;
+
 public class Main {
 
     public static void main(String[] args) {
 	// write your code here
-        Customer kagiso = new Customer("kagiso" , 543.33);
-        Branch branch = new Branch("Same" , kagiso );
 
-        
+        Branch branch = new Branch("Same");
+        branch.addNewCustomer("kagiso", 556);
+        branch.addNewCustomer("Moral" , 532.453);
 
-        System.out.println("hello world" + branch.getListOfCustomers());
+        ArrayList<Customer> listOfCustomers = branch.getListOfCustomers();
+
+        for(int i = 0 ; i < listOfCustomers.size() ; i++){
+            System.out.println("hello world" + listOfCustomers.get(i).getCustomer());
+        }
+
     }
 }
