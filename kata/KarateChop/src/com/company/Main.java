@@ -11,7 +11,7 @@ public class Main {
         // write your code here
         int[] data = {40, 50, 10, 30, 20, 5};
         System.out.println(chop(50 , data));
-    }
+    };
 
 
     public static int chop(int checkValue, int[] array) {
