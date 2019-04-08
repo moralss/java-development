@@ -14,7 +14,7 @@ public class CountMostAcurring {
             for (int j = 0; j < numbers.length; j++) {
                 if (digit == numbers[j]) {
                     count++;
-
+                    System.out.println("count");
                 }
 
                 if(count > highestValue){
