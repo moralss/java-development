@@ -12,6 +12,7 @@ public class Main {
 
     }
 
+
     public static void generateRandomPassword(Integer length) {
         String characters = "ABCDEFGHIJKLOMOPQRSTUVWXYZ";
         char [] valuess = new char[length];
@@ -24,6 +25,7 @@ public class Main {
 
         }
     }
+
 }
 
 
