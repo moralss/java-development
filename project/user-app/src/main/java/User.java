@@ -2,8 +2,10 @@ import java.sql.PreparedStatement;
 import java.sql.ResultSet;
 
 public class User {
+    private Integer id;
     private String firstName;
     private String secondName;
+
 
     User(String firstName , String secondName){
         this.firstName = firstName;

@@ -1,8 +1,9 @@
+
 import java.sql.PreparedStatement;
 import java.sql.ResultSet;
 import java.sql.Statement;
 
-public class UserRepository {
+public class UserRepository implements DbContract{
     private Database db;
 
     UserRepository(Database db){
