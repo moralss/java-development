@@ -18,9 +18,8 @@ public class UserRepository implements DbContract{
             ResultSet rs = st.executeQuery();
             while (rs.next())
             {
-                System.out.println("result" + rs.getInt(1) + " " + rs.getString(2) + " " + rs.getString(3));
+                System.out.println("result " + rs.getInt(1) + " " + rs.getString(2) + " " + rs.getString(3));
             }
-
         }catch (Exception ex){
             System.out.println(ex.getMessage());
         }
