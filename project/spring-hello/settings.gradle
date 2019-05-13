@@ -1,0 +1,3 @@
+rootProject.name = 'spring-hello'
+enableFeaturePreview('IMPROVED_POM_SUPPORT')
+
