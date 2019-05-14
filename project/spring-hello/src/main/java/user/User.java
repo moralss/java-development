@@ -1,11 +1,20 @@
+
 package user;
 
+
+import javax.persistence.Column;
+import javax.persistence.Id;
+
 public  class User{
+
+    @Id
     private Integer id;
+
+    @Column(name ="name")
     private String name;
 
 
-    public User(Integer id , String name) {
+    public User(Integer   id , String name) {
         super();
         this.name = name;
         this.id = id;
