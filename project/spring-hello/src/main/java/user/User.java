@@ -2,19 +2,19 @@
 package user;
 
 
-import javax.persistence.Column;
-import javax.persistence.Id;
 
+//@Entity
+//@Table(name="user_storage")
 public  class User{
 
-    @Id
-    private Integer id;
+//    @GeneratedValue(strategy = GenerationType.IDENTITY)
+    private Long id;
 
-    @Column(name ="name")
+//    @Column(name ="name")
     private String name;
 
 
-    public User(Integer   id , String name) {
+    public User(long id , String name) {
         super();
         this.name = name;
         this.id = id;
@@ -29,11 +29,11 @@ public  class User{
         this.name = name;
     }
 
-    public void setId(int id){
+    public void setId(Long id){
         this.id = id;
     }
 
-    public int getId() {
+    public Long getId() {
         return id;
     }
 }

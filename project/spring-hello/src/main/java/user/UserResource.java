@@ -10,9 +10,9 @@ import java.util.List;
 public class UserResource {
 
     @Autowired
-    private UserDataService service;
+    private UserDataService  service;
 
-//
+    @CrossOrigin
     @GetMapping("/users")
     public List<User> getUser() {
         return service.findAll();
@@ -23,22 +23,22 @@ public class UserResource {
         return service.findOne(id);
     }
 
-
+    @CrossOrigin
     @PostMapping("/users")
     public void createUser(@RequestBody User user){
         service.saveUser(user);
     }
 
-    @PutMapping("/users")
-    public void updateUser(@RequestBody User user){
-        service.updateUser(user);
-    }
-
-
-    @DeleteMapping("/users/{id}")
-    public void removeUser(@PathVariable  int id){
-        service.removeUser(id);
-    }
+//    @PutMapping("/users")
+//    public void updateUser(@RequestBody User user){
+//        service.updateUser(user);
+//    }
+//
+//
+//    @DeleteMapping("/users/{id}")
+//    public void removeUser(@PathVariable  int id){
+//        service.removeUser(id);
+//    }
 
 }
 

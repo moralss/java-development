@@ -17,11 +17,11 @@ repositories {
 dependencies {
     implementation 'org.springframework.boot:spring-boot-dependencies:2.0.5.RELEASE'
     implementation 'org.springframework.boot:spring-boot-starter-web'
-    implementation 'org.hibernate:hibernate-core:5.4.2.Final'
 
     testImplementation 'org.springframework.boot:spring-boot-starter-test'
 
-    compile('org.springframework.boot:spring-boot-starter-data-jpa')
+//    compile('org.springframework.boot:spring-boot-starter-data-jpa')
+//    compile group: 'org.postgresql', name: 'postgresql', version: '42.2.1'
 
     components {
         withModule('org.springframework:spring-beans') {

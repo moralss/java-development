@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="RealBillingServiceTest" tests="1" skipped="0" failures="0" errors="0" timestamp="2019-06-11T08:08:05" hostname="moral-ThinkPad-T400" time="0.004">
+  <properties/>
+  <testcase name="testSuccessfulCharge" classname="RealBillingServiceTest" time="0.004"/>
+  <system-out><![CDATA[100
+ChargeResult@128e5e5
+ChargeResult@128e5e5
+]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>
