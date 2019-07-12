@@ -13,6 +13,10 @@ public class User {
     @Column(name = "name")
     private String name;
 
+    public User(){
+
+
+    }
 
     public User(Integer id, String name) {
         this.id = id;
