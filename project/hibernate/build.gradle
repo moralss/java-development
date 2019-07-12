@@ -1,12 +1,4 @@
-//buildscript {
-//    repositories {
-//        mavenCentral()
-//    }
-//    dependencies {
-//        classpath("org.springframework.boot:spring-boot-gradle-plugin:3.1.6.RELEASE")
-//
-//    }
-//}
+
 
 plugins {
     id 'java'
@@ -39,7 +31,6 @@ targetCompatibility = 1.8
 dependencies {
     compile("org.springframework.boot:spring-boot-starter-web")
     implementation('org.springframework.boot:spring-boot-starter-web')
-//    compile group: 'javax.persistence', name: 'persistence-api', version: '1.0'
     implementation('org.postgresql:postgresql')
     compile('org.springframework.boot:spring-boot-starter-data-jpa')
     testImplementation('org.springframework.boot:spring-boot-starter-test')
